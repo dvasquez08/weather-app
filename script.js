@@ -1,7 +1,7 @@
 const apiKey = '4ab12272754d9bc2b94909bb5e2d7fca';
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-bar');
-const location = document.getElementById('location');
+const locale = document.getElementById('location');
 const icon = document.getElementById('icon');
 const temperature = document.getElementById('temperature');
 const description = document.getElementById('description');
@@ -16,7 +16,7 @@ searchButton.addEventListener(
 function fetchWeatherData(query) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${apiKey}`)
         .then(response => response.json()).then(data => {
-            location.textContent = data.name;
+            locale.textContent = data.name;
             icon.innerHTML = `<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather Icon">`;
             temperature.textConent = `${data.main.temp}°C`;
             description.textContent = data.weather[0].description;
