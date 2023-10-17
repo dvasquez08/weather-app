@@ -3,7 +3,7 @@
 // to follow best practices I didn't add it here but it works 
 // when I enter the key and test it for now, it's just a placeholder
 
-const apiKey = 'OPEN_WEATHER_API_KEY';
+const apiKey = '4ab12272754d9bc2b94909bb5e2d7fca';
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-bar');
 const locale = document.getElementById('location');
