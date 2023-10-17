@@ -5,10 +5,14 @@ body {
   background-color: #caf0f8;
 }
 
+/* styling for the title area */
+
 .title-section {
   text-align: center;
   margin-top: 10%;
 }
+
+/* Styling for the search function area */
 
 .search-area {
   display: flex;
@@ -35,12 +39,16 @@ body {
   padding: 3px;
 }
 
+/* Styling for the results area of the location forcast */
+
 .weather-section {
   margin-top: 8%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
+/* This is for the footer area */
 
 .footer {
   margin-top: 10%;
