@@ -1,4 +1,4 @@
-const apiKey = '4ab12272754d9bc2b94909bb5e2d7fca';
+const apiKey = 'OPEN_WEATHER_API_KEY';
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-bar');
 const locale = document.getElementById('location');
