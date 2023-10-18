@@ -21,6 +21,16 @@ searchButton.addEventListener(
     }
 );
 
+// This function here allow the user to get the forecast of their location by pressing the Enter key
+
+searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        const query = searchInput.value;
+        fetchWeatherData(query);
+    }
+});
+
 // The function that fetches the data using the API Key, and displays an error message if the data can't be retrieved
 
 function fetchWeatherData(query) {
