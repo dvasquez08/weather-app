@@ -31,14 +31,14 @@ searchInput.addEventListener('keydown', (event) => {
     }
 });
 
-// The function that fetches the data using the API Key, and displays an error message if the data can't be retrieved
+// The function that fetches the data using the API Key, and logs an error in the console if the data can't be retrieved
 
 function fetchWeatherData(query) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${apiKey}`)
         .then(response => response.json()).then(data => {
             locale.textContent = data.name;
             icon.innerHTML = `<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather Icon">`;
-            temperature.textConent = `${data.main.temp}°C`;
+            temperature.textContent = `${data.main.temp}°C`;
             description.textContent = data.weather[0].description;
         }).catch(error => console.error('Error fetching weather data:', error));
     }
