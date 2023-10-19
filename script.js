@@ -45,6 +45,8 @@ function fetchWeatherData(query) {
         
     }
 
+    // function that shows the error message to the user when entering an invalid location
+
     function showError(message) {
         locale.textContent = ''
         icon.innerHTML = '';
