@@ -1,7 +1,4 @@
 // Section where HTML elements are being selected from the DOM
-// The API key is free and won't charge me anything but just 
-// to follow best practices I didn't add it here but it works 
-// when I enter the key and test it for now, it's just a placeholder
 
 const apiKey = '4ab12272754d9bc2b94909bb5e2d7fca';
 const searchButton = document.getElementById('search-button');
@@ -36,10 +33,22 @@ searchInput.addEventListener('keydown', (event) => {
 function fetchWeatherData(query) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&appid=${apiKey}`)
         .then(response => response.json()).then(data => {
+            if (data.cod !== 200) {
+                showError('Invalid location, unable to get weather data');
+                return;
+            }
             locale.textContent = data.name;
             icon.innerHTML = `<img src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather Icon">`;
             temperature.textContent = `${data.main.temp}°C`;
             description.textContent = data.weather[0].description;
         }).catch(error => console.error('Error fetching weather data:', error));
+        showError('Invalid location, unable to get weather data');
+    }
+
+    function showError(message) {
+        locale.textContent = ''
+        icon.innerHTML = '';
+        temperature.textContent = '';
+        description.textContent = message;
     }
 
