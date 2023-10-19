@@ -12,7 +12,7 @@ This app is a work in progress. It hasn't been optimized for mobile devices yet 
 
 This is how it looks when you enter a location to get the weather
 
-![screenshot2](https://github.com/dvasquez08/weather-app/assets/99619761/9c74f126-7e2d-4705-a689-11981ea334e4)
+![screenshot2](https://github.com/dvasquez08/weather-app/assets/99619761/a460c355-74df-45b4-8622-9c7a0caf2890)
 
 # Error message
 
