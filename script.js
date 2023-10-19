@@ -42,7 +42,7 @@ function fetchWeatherData(query) {
             temperature.textContent = `${data.main.temp}°C`;
             description.textContent = data.weather[0].description;
         }).catch(error => console.error('Error fetching weather data:', error));
-        showError('Invalid location, unable to get weather data');
+        
     }
 
     function showError(message) {
