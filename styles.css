@@ -135,14 +135,23 @@ a {
 /* This is for the footer area */
 
 .footer {
+  width: 100%;
   margin-top: 10%;
-  height: 20vh;
+  bottom: 0;
   background-color: #e9ecef;
-  text-align: center;
 }
 
 .footer-content {
+  text-align: center;
   display: flex;
-  flex-wrap: wrap-reverse;
   flex-direction: column;
+  justify-content: center;
+}
+
+/* Making the page responsive */
+
+@media (max-width: 788px) {
+  .title-content {
+    text-align: center;
+  }
 }
