@@ -1,5 +1,30 @@
 # Weather App
 
-An application that uses an API to search for a location and get the weather
+An application that uses an API to search for a location and get the weather. 
 
-This is a work in progress so changes will be made as I go along and mostly to get as much practice with GitHub as much as possible. You'll see the changes as time goes along and more features are added, should be a fun journey!
+# About the app
+
+This app is a work in progress. It hasn't been optimized for mobile devices yet which is what is next up for this app. The basic functionality has been complete with the styling where I like it. The API is quite basic, it will only show the current weather. I'll try to look into some features where it provides more information about the forcast of the location you enter. For now, you can see the current waether of a location that you enter.
+
+![screenshot1](https://github.com/dvasquez08/weather-app/assets/99619761/0312a5a0-cbc5-4d4b-b922-deefd171eec5)
+
+# Functionality
+
+This is how it looks when you enter a location to get the weather
+
+![screenshot2](https://github.com/dvasquez08/weather-app/assets/99619761/a460c355-74df-45b4-8622-9c7a0caf2890)
+
+# Error message
+
+This is how the app reacts when you enter an invalid location
+
+![screenshot3](https://github.com/dvasquez08/weather-app/assets/99619761/5446c118-c69f-4f75-8ae7-c5d77867ff53)
+
+# Give it a try
+
+Try it out and enter a city of your choice and see what the current weather is!
+
+https://dvasquez08.github.io/weather-app/
+
+
+
