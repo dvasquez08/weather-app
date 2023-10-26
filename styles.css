@@ -82,12 +82,34 @@ a {
 
 #search-bar {
   width: 40vh;
+  height: 4vh;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 #search-button {
-  margin-top: 10px;
-  width: 10vh;
+  margin-top: 14px;
+  width: 12vh;
+  height: 5vh;
   padding: 3px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: large;
+  background-color: #03045e;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#search-button:hover {
+  transform: scale(1.1);
+}
+
+#search-button:active {
+  background-color: #90e0ef;
+  transform: scale(0.7);
 }
 
 /* Styling for the results area of the location forcast */
