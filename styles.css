@@ -83,6 +83,7 @@ a {
 #search-bar {
   width: 40vh;
   height: 4vh;
+  padding: 7px;
   border: 1px solid transparent;
   border-radius: 20px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
