@@ -83,6 +83,7 @@ a {
 #search-bar {
   width: 40vh;
   height: 4vh;
+  padding: 7px;
   border: 1px solid transparent;
   border-radius: 20px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
@@ -135,14 +136,23 @@ a {
 /* This is for the footer area */
 
 .footer {
+  width: 100%;
   margin-top: 10%;
-  height: 20vh;
+  bottom: 0;
   background-color: #e9ecef;
-  text-align: center;
 }
 
 .footer-content {
+  text-align: center;
   display: flex;
-  flex-wrap: wrap-reverse;
   flex-direction: column;
+  justify-content: center;
+}
+
+/* Making the page responsive */
+
+@media (max-width: 788px) {
+  .title-content {
+    text-align: center;
+  }
 }

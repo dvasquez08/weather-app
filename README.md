@@ -12,7 +12,7 @@ This app is a work in progress. It hasn't been optimized for mobile devices yet 
 
 This is how it looks when you enter a location to get the weather
 
-![screenshot2](https://github.com/dvasquez08/weather-app/assets/99619761/a460c355-74df-45b4-8622-9c7a0caf2890)
+![Screenshot 2023-10-26 162137](https://github.com/dvasquez08/weather-app/assets/99619761/0abd1049-b519-4420-969a-ed01f30fecf1)
 
 # Error message
 
@@ -24,7 +24,8 @@ This is how the app reacts when you enter an invalid location
 
 Try it out and enter a city of your choice and see what the current weather is!
 
-https://dvasquez08.github.io/weather-app/
+[Try my weather app](https://dvasquez08.github.io/weather-app/)
+
 
 
 
